@@ -1,6 +1,6 @@
 # MUX 4-to-1 Hierarchical Design
 
-Đây là dự án thiết kế mạch dồn kênh (Multiplexer) 4-sang-1 sử dụng cấu trúc phân cấp (hierarchical design). Dự án được triển khai trên nền tảng TinyTapeout để học tập về thiết kế logic số và quy trình tapeout chip SKY130.
+Đây là dự án thiết kế mạch dồn kênh (Multiplexer) 4-sang-1 sử dụng cấu trúc phân cấp  (hierarchical design). Dự án được triển khai trên nền tảng TinyTapeout để học tập về thiết kế logic số và quy trình tapeout chip SKY130.
 
 ## Cấu trúc thiết kế
 Thiết kế sử dụng 3 khối MUX 2-sang-1 (`mux2to1`) được kết nối theo mô hình phân cấp:
