@@ -1,19 +1,41 @@
-# Tiny Tapeout project information
+
+yaml_version: 1
 project:
   author: "LeThanhThao"
   title: "4-to-1 MUX Hierarchical Design"
   description: "Xây dựng MUX 4-1 từ các khối MUX 2-1"
   language: "Verilog"
   clock_period: 0
+  tiles: "1x1"
+  top_module: "tt_um_thao_4to1_mux"
+  source_files:
+    - project.v
 
-# Cấu hình file nguồn
-source_files:
-  - project.v
-top_module: "tt_um_thao_4to1_mux"
-
-# Cấu hình pinout (Bắt buộc để vượt qua precheck)
 pinout:
-  # ui_in: [0, 1, 2, 3, 4, 5, 6, 7]
-  ui_in: [I0, I1, I2, I3, S0, S1, x, x]
-  # uo_out: [0, 1, 2, 3, 4, 5, 6, 7]
-  uo_out: [Y, x, x, x, x, x, x, x]
+  # Các chân I/O tương ứng với vị trí trong mảng 8-bit
+  ui[0]: "I0"
+  ui[1]: "I1"
+  ui[2]: "I2"
+  ui[3]: "I3"
+  ui[4]: "S0"
+  ui[5]: "S1"
+  ui[6]: "x"
+  ui[7]: "x"
+  
+  uo[0]: "Y"
+  uo[1]: "x"
+  uo[2]: "x"
+  uo[3]: "x"
+  uo[4]: "x"
+  uo[5]: "x"
+  uo[6]: "x"
+  uo[7]: "x"
+  
+  uio[0]: "x"
+  uio[1]: "x"
+  uio[2]: "x"
+  uio[3]: "x"
+  uio[4]: "x"
+  uio[5]: "x"
+  uio[6]: "x"
+  uio[7]: "x"
